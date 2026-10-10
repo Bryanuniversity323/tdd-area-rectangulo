@@ -30,4 +30,16 @@ class CalculadoraTest {
                 () -> calc.calcularArea(-5, 4));
         assertEquals("La base y la altura deben ser mayores que cero", ex.getMessage());
     }
+
+    @Test
+    void baseCeroLanzaIllegalArgumentException() {
+        assertThrows(IllegalArgumentException.class,
+                () -> calc.calcularArea(0, 4));
+    }
+
+    @Test
+    void alturaCeroLanzaIllegalArgumentException() {
+        assertThrows(IllegalArgumentException.class,
+                () -> calc.calcularArea(5, 0));
+    }
 }
