@@ -1,6 +1,7 @@
 package pe.edu.upn.area;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
@@ -22,6 +23,11 @@ class CalculadoraTest {
     void areaConLadoMinimo1x1Es1() {
         assertEquals(1, calc.calcularArea(1, 1));
     }
+
+    @Test
+    void baseNegativaLanzaIllegalArgumentException() {
+        IllegalArgumentException ex = assertThrows(IllegalArgumentException.class,
+                () -> calc.calcularArea(-5, 4));
+        assertEquals("La base y la altura deben ser mayores que cero", ex.getMessage());
+    }
 }
-
-
