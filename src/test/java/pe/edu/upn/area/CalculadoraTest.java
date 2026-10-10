@@ -12,4 +12,10 @@ class CalculadoraTest {
     void areaDeRectangulo5x4Es20() {
         assertEquals(20, calc.calcularArea(5, 4));
     }
+
+    @Test
+    void areaDeRectangulo3x7Es21() {
+        assertEquals(21, calc.calcularArea(3, 7));
+    }
 }
+
