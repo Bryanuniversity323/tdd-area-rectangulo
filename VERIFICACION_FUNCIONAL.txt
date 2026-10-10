@@ -1,0 +1,11 @@
+Verificación funcional del estado final realizada sobre Calculadora.java:
+- 5 x 4 = 20
+- 3 x 7 = 21
+- 1 x 1 = 1
+- Lado negativo -> IllegalArgumentException con el mensaje solicitado
+- Lado cero -> IllegalArgumentException
+- 50 000 x 50 000 -> ArithmeticException por desbordamiento
+
+Resultado: VERIFICACION FUNCIONAL OK
+
+Nota: esta verificación se realizó con javac/java. En tu PC debes ejecutar también `mvn test` para obtener la evidencia JUnit solicitada por la ficha.
