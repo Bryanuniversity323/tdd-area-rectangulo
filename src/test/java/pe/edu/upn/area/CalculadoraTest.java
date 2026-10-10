@@ -17,5 +17,11 @@ class CalculadoraTest {
     void areaDeRectangulo3x7Es21() {
         assertEquals(21, calc.calcularArea(3, 7));
     }
+
+    @Test
+    void areaConLadoMinimo1x1Es1() {
+        assertEquals(1, calc.calcularArea(1, 1));
+    }
 }
+
 
