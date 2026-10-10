@@ -1,0 +1,17 @@
+HISTORIAL TDD – COMMITS PARA EVIDENCIAS
+
+Ciclo 1 RED     a45a717  red: escribir prueba area 5x4 igual a 20
+Ciclo 1 GREEN   de0c159  green: devolver 20 como implementacion minima
+Ciclo 2 RED     9037435  red: agregar prueba 3x7 para obligar a generalizar
+Ciclo 2 GREEN   8f9d722  green: generalizar calculo con base por altura
+Ciclo 3         a80a1af  test: ciclo 3 valor limite 1x1 pasa con la formula actual
+Ciclo 4 RED     53cfcc2  red: probar base negativa y mensaje de error
+Ciclo 4 GREEN   980d06a  green: validar lados negativos con IllegalArgumentException
+Ciclo 5 RED     e5b2151  red: probar base y altura iguales a cero
+Ciclo 5 GREEN   6c14397  green: rechazar lados menores o iguales a cero
+Ciclo 6         b0f8c70  refactor: parametrizar pruebas y extraer validacion de lados
+Reto RED        262fac3  red: agregar reto de desbordamiento de int
+Reto GREEN      c806a59  green: detectar desbordamiento con Math.multiplyExact
+
+Para ver todo el historial:
+git --no-pager log --oneline --reverse
