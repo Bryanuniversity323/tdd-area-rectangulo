@@ -33,4 +33,11 @@ class CalculadoraTest {
                 () -> calc.calcularArea(base, altura));
         assertEquals(Calculadora.MENSAJE_LADOS_INVALIDOS, ex.getMessage());
     }
+
+    @Test
+    void areaQueSuperaElRangoDeIntLanzaArithmeticException() {
+        assertThrows(ArithmeticException.class,
+                () -> calc.calcularArea(50_000, 50_000));
+    }
 }
+
