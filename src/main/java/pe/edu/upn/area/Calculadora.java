@@ -10,7 +10,7 @@ public class Calculadora {
 
     public int calcularArea(int base, int altura) {
         validarLados(base, altura);
-        return base * altura;
+        return Math.multiplyExact(base, altura);
     }
 
     private static void validarLados(int base, int altura) {
